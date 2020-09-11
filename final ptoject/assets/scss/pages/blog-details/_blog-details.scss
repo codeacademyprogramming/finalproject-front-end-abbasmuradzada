@@ -1,0 +1,87 @@
+#blog-detail{
+    position: relative;
+    padding-top: 80px;
+    #blog-detail-content{
+        margin-bottom: 50px;
+        z-index: 9999;
+        >.sec-title{
+            margin-bottom: 20px;
+            >a{
+                color: $orange;
+            }
+        }
+        >.sec-header{
+            margin-bottom: 24px;
+        }
+    }
+    #blog-img{
+        width: 100%;
+        height: 484px;
+        margin-bottom: 50px;
+        >img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    #blog-desc{
+        width: 100%;
+        padding: 80px 0;
+        #blog-s-media{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            .sm-direction{
+                width: calc((100% - 90px)/6) !important;
+                height: 50px;
+                border-radius: 5px;
+                padding: 12px;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                &:nth-child(1){
+                    @include sm-direction(#3b5998);
+                }
+                &:nth-child(2){
+                    @include sm-direction(#1da1f2);
+                }
+                &:nth-child(3){
+                    @include sm-direction(#007bb5);
+                }
+                &:nth-child(4){
+                    @include sm-direction(#ff4500);
+                }
+                &:nth-child(5){
+                    @include sm-direction(#25d366);
+                }
+                &:nth-child(6){
+                    @include sm-direction(#ff0000);
+                }
+                >span{
+                    @extend .common-desc-f-style;
+                    color: #fff;
+                    text-transform: capitalize;
+                }
+                .icon-square{
+                    width: 26px;
+                    height: 26px;
+                    border-radius: 4px;
+                    background-color: white;
+                    display: flex;
+                    justify-content: center;align-items: center;
+                    margin-right: 18px;
+                }
+            }
+        }
+        #blog-tags{
+            display: flex;
+            padding-bottom: 30px;
+            border-bottom: 1px solid $l-grey;
+            .tag{
+                @include button-style (16px, 400, 30px, $purple, $extra-l-grey, 5px, none, 18px 40px);
+                text-transform: capitalize;
+                margin-right: 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+@import "../../details/mixin";
+
+#course-filtering{
+    padding: 80px 0;
+    #filter-bar{
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .fill-btn{
+            @media only screen and (max-width: 600px) {
+                margin-bottom: 20px;
+            }
+        }
+        #category-bar{
+            >button{
+                @media only screen and (max-width: 600px) {
+                    margin-left: 0px;
+                }
+                height: 53px;
+                margin-bottom: 20px;
+                @include button-style (16px, 400, 24px, $purple, $extra-l-grey, 5px, none, 0 20px);
+                text-transform: capitalize;
+                margin-left: 18px;
+                &:first-child{
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+    #platform-info{
+        margin-top: 50px;
+        height: 600px;
+        width: 100%;
+        position: relative;
+        #platform-info-content{
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+                padding: 0 10px;
+            }
+            height: 100%;
+            width: 770px;
+            padding: 0 216px 0 80px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            >h2{
+                margin-bottom: 40px;
+            }
+            #platform-features{
+                margin-bottom: 35px;
+                .platform-feature{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 17px;
+                    &:last-child{
+                        margin-bottom: 0px;
+                    }
+                    >img{
+                        margin-right: 30px;
+                    }
+                    >p{
+                        @include font-style(24px, 500, 40px, $purple);
+                    }
+                }
+            }
+        }
+        #platform-image{
+            @media only screen and (max-width: 600px) {
+                display: none;
+            }
+            width: 570px;
+            height: 468px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            >img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

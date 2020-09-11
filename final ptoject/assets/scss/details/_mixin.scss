@@ -1,0 +1,25 @@
+@mixin font-style($f-size, $f-weight, $l-height, $color){
+    font-size: $f-size;
+    font-weight: $f-weight;
+    line-height: $l-height;
+    color: $color;
+}
+
+@mixin button-style ($f-size, $f-weight, $l-height, $color, $bg, $b-radius, $border, $padding){
+    font-size: $f-size;
+    font-weight: $f-weight;
+    line-height: $l-height;
+    color: $color;
+    background-color: $bg;
+    border-radius: $b-radius;
+    border: $border;
+    padding: $padding;
+    outline: none;
+}
+
+@mixin sm-direction($color) {
+    background-color:  $color;
+    i{
+        color: $color;
+    }
+}
