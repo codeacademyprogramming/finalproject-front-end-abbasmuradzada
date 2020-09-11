@@ -1,0 +1,41 @@
+#classes{
+    padding-top: 80px;
+    #class-list{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .class-card{
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+            }
+            width: calc((100% - 60px)/3);
+            height: 445px;
+            margin-top: 209px;
+            border: 1px solid $l-grey;
+            padding: 0 22px;
+            box-sizing: border-box;
+            .class-bg{
+                width: 100%;
+                height: 280px;
+                position: relative;
+                margin-top: -73px;
+                margin-bottom: 30px;
+                img{
+                    position: absolute;
+                    left: 28px;
+                    bottom: 0;
+                }
+            }
+            .teacher-name{
+                @include font-style(24px, 600, initial, $dark);
+                text-transform: capitalize;
+                margin-bottom: 17px;
+            }
+            .class-desc{
+                @include font-style(16px, 400, 30px, $purple);
+                letter-spacing: 0.02em;
+            }
+        }
+    }
+}

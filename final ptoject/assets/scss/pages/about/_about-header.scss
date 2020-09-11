@@ -1,0 +1,37 @@
+#about-us-header-sec{
+    width: 100%;
+    padding: 80px 0;
+    >.container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    #about-page-desc{
+        @media only screen and (max-width: 1070px) {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        width: 440px;
+        .sec-title{
+            margin-bottom: 25px;
+        }
+        .section-head-f-style{
+            margin-bottom: 35px;
+        }
+        .common-desc-f-style{
+            margin-bottom: 15px;
+        }
+    }
+    .about-page-header-img{
+        width: 626px;
+        height: 415px;
+        @media only screen and (max-width: 1070px) {
+            width: 100%;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}

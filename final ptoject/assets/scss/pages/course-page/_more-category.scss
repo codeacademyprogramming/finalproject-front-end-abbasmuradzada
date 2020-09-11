@@ -1,0 +1,38 @@
+#more-category{
+    padding: 80px 0 50px 0;
+    #category-list{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .category-card{
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+            }
+            width: calc((100% - 90px)/4);
+            margin-bottom: 30px;
+            padding: 40px 22px 33px 22px;
+            box-sizing: border-box;
+            transition: .2s;
+            border-radius: 5px;
+            &:hover{
+                background-color: $orange;
+                h4,p{
+                    color: #fff;
+                }
+            }
+            >img{
+                margin-bottom: 12px;
+            }
+            >h4{
+                @include font-style(24px, 500, 32px, $dark);
+                margin-bottom: 17px;
+                text-transform: capitalize;
+            }
+            >p{
+                @include font-style(16px, 400, 30px, $purple);
+            }
+        }
+    }
+}

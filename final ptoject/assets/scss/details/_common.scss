@@ -1,0 +1,147 @@
+@import "./mixin";
+
+body{
+    font-family: 'Poppins', sans-serif;
+    @media only screen and (max-width: 600px) {
+        width: 100vw;
+    }
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container{
+    width: $container;
+    margin: 0 auto;
+    @media only screen and (max-width: $container) {
+        width: 100%;
+        padding: 0px 20px !important;
+        box-sizing: border-box;
+    }
+}
+
+.section-head-f-style{
+    @include font-style(40px, 500, initial, $dark);
+    @media only screen and (max-width: 600px) {
+        @include font-style(30px, 500, initial, $dark);
+    }
+}
+
+.course-details-small-heading{
+    @include font-style(18px, 500, 24px, $dark);
+}
+
+.common-desc-f-style{
+    @include font-style(16px, 400, 30px, $purple);
+    letter-spacing: 0.02em;
+}
+
+.sec-title{
+    @include font-style(18px, 400, 24px, $purple);
+    text-transform: uppercase;
+}
+
+.absolute-right-middle{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.absolute-left-middle{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bg-light-purple{
+    background-color: #EFEFF6;
+}
+
+.bg-light-pink{
+    background-color: #FEF3E8;
+}
+
+.bg-light-green{
+    background-color: #E6FAEA;
+}
+
+.bg-light-blue{
+    background-color: #DDF7FF;
+}
+
+.bg-white{
+    background-color: #fff !important;
+}
+
+.bg-slider-pink{
+    background-color: #FEF0EF;
+}
+
+.bg-brown{
+    background-color: #B3A092;
+}
+
+.bg-blue-second{
+    background-color: #64929F;
+}
+
+.bg-orange{
+    background-color: $orange;
+}
+
+.bg-purple{
+    background-color: $purple;
+}
+
+.bg-red{
+    background-color: $red;
+}
+
+.bg-green{
+    background-color: $green;
+}
+
+.bg-grey{
+    background-color: $grey;
+}
+
+.cur-1-bg{
+    background-color: #FEF9E5;
+}
+
+.cur-2-bg{
+    background-color: #F4F9FD;
+}
+
+.cur-3-bg{
+    background-color: #43C8B1;
+}
+
+.bg-white{
+    background-color: #fff;
+}
+
+.course-active-section{
+    display: block !important;
+}
+
+.jc-right{
+    display: flex;
+    justify-content: flex-end;
+    .contact-card{
+        padding:114px 48px 114px 270px;
+    }
+}
+
+.jc-left{
+    display: flex;
+    justify-content: flex-start;
+    .contact-card{
+        padding:114px 248px 114px 70px;
+
+    }
+}

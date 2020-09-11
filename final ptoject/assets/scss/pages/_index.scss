@@ -1,0 +1,38 @@
+// HOMEPAGE SECTIONS
+@import "./homepage/header";
+@import "./homepage/course-category";
+@import "./homepage/course-choices";
+@import "./homepage/student-comments";
+@import "./homepage/partners";
+
+// COURSE PAGE SECTIONS
+@import "./course-page/course-page-header";
+@import "./course-page/more-category";
+@import "./course-page/remote-learning";
+
+// SEARCH PAGE
+@import "./search-page/search-section";
+@import "./search-page/course-filtering";
+@import "./search-page/classes";
+
+// COURSE DETAILS
+@import "./course-details/course-details";
+
+// TEACHER PROFILE
+@import "./teacher-profile/teacher-frofile";
+
+// BLOG DETAILS
+@import "./blog-details/blog-details";
+
+// BLOG
+@import "./blog/reading-blog";
+@import './blog/blog';
+
+// ABOUT
+@import "./about/about-header";
+@import "./about/about-promotion";
+@import "./about/platform-info";
+@import "./about/best-platform";
+
+// PAYMENT DETAILS
+@import "./payment/payment";

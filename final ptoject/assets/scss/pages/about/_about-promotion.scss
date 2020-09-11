@@ -1,0 +1,47 @@
+#about-promotion{
+    padding-bottom: 80px;
+    &.container{
+        @media only screen and (max-width: 600px) {
+            padding: 0;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        width: 100%;
+        // margin-bottom: 30px;
+    }
+    .sec-header{
+        @media only screen and (max-width: 600px) {
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+    }
+    #skillfy-list{
+        @media only screen and (max-width: 600px) {
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .skillfy-card{
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            width: calc((100% - 60px)/3);
+            padding: 58px 41px 45px 41px;
+            box-sizing: border-box;
+            .skillfy-icon{
+                margin-bottom: 20px;
+            }
+            .skillfy-name{
+                @include font-style(24px, 500, 32px, $dark);
+                margin-bottom: 20px;
+            }
+            .skillfy-desc{
+                margin-bottom: 23px;
+            }
+        }
+    }
+}
